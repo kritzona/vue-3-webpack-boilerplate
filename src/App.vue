@@ -20,5 +20,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .app {
+  margin: 0;
 }
 </style>

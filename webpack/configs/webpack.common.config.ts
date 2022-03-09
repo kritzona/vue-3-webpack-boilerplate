@@ -42,7 +42,7 @@ const config: WebpackConfig = {
     }),
 
     new StylelintWebpackPlugin({
-      extensions: ['css', 'scss', 'sass'],
+      files: ['**/*.{vue,css,sss,less,scss,sass}'],
     }),
 
     new HtmlWebpackPlugin({

@@ -16,5 +16,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .home-page {
+  margin: 0;
 }
 </style>
