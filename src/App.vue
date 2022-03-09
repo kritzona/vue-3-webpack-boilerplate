@@ -21,5 +21,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 .app {
   margin: 0;
+
+  background-position: bottom;
+  background-size: cover;
 }
 </style>
