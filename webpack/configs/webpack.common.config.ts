@@ -3,6 +3,7 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ESLintWebpackPlugin from 'eslint-webpack-plugin';
 import StylelintWebpackPlugin from 'stylelint-webpack-plugin';
+import webpack from 'webpack';
 
 const config: WebpackConfig = {
   entry: path.resolve(__dirname, '../../src/main.ts'),
@@ -31,6 +32,11 @@ const config: WebpackConfig = {
   },
 
   plugins: [
+    new webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false,
+    }),
+
     new ESLintWebpackPlugin({
       extensions: ['js', 'jsx', 'ts', 'tsx', 'vue'],
     }),

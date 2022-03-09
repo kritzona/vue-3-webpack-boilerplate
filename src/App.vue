@@ -1,5 +1,7 @@
 <template>
-  <div class="app">{{ hello }}</div>
+  <div class="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script lang="ts">
@@ -18,11 +20,5 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .app {
-  ::placeholder {
-    color: gray;
-  }
-
-  font-weight: bold;
-  background-image: url(./assets/images/corgi.jpeg);
 }
 </style>
